@@ -35,5 +35,12 @@ namespace SampleWebApi.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        [Route ("GetString")]
+        public string GetString()
+        {
+            return "This is for checking the CI/CD workflow";
+        }
     }
 }
